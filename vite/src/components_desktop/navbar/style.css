@@ -1,0 +1,11 @@
+#navbarcontainer {
+    /* background-color: #741f1f; */
+    background: linear-gradient(90deg, #741f1f, #741f1f, #741f1f, #521515)
+}
+
+#idollalogo {
+    height: 100%;
+    width: 37%;
+    background-image: url("../../assets/idollalogo.png");
+    background-size:100%;
+}

@@ -1,0 +1,6 @@
+#herocontainer {
+    height: 36em;
+    width: auto;
+    background-image: url("../../../assets/unnamed.jpg");
+    background-size: cover;
+}

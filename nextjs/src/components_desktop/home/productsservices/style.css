@@ -1,0 +1,76 @@
+#homepscontainerdiv {
+    margin-bottom: -28rem;
+}
+
+#homegolddiv {
+    height: 100%;
+    background-image: url("../../../assets/products/IMG_3791.jpeg");
+    background-size: 100% 100%;
+}
+
+#homediamonddiv {
+    background-image: url("../../../assets/products/IMG_6710.jpeg");
+    background-size: 100% 100%;
+}
+
+#homeringimg {
+    background-image: url("../../../assets/products/IMG_3796.jpeg");
+    background-size: 100% 100%;
+}
+
+#homependantimg {
+    background-image: url("../../../assets/products/IMG_3799.jpeg");
+    background-size: 100% 100%;
+}
+
+#homeearringsimg {
+    background-image: url("../../../assets/products/IMG_3793.jpeg");
+    background-size: 100% 100%;
+}
+
+#homenecklaceimg {
+    background-image: url("../../../assets/products/IMG_3802.jpeg");
+    background-size: 100% 100%;
+}
+
+#homebraceletimg {
+    background-image: url("../../../assets/products/IMG_3795.jpeg");
+    background-size: 100% 100%;
+}
+
+#homebroochimg {
+    background-image: url("../../../assets/products/IMG_3792.jpeg");
+    background-size: 100% 100%;
+}
+
+#homegolddiamondsizediv {
+    height: 34rem;
+}
+
+#homegolddiv:hover {
+    box-shadow: 0px 0px 4px 2px #c9c9c9;
+}
+
+#homegolddiv:active {
+    box-shadow: 0px 0px 4px 4px #aeaeae;
+}
+
+#homediamonddiv:hover {
+    box-shadow: 0px 0px 4px 2px #c9c9c9;
+}
+
+#homediamonddiv:active {
+    box-shadow: 0px 0px 4px 4px #aeaeae;
+}
+
+#homejewelrytypesdiv button:hover {
+    box-shadow: 0px 0px 4px 2px #c9c9c9;
+}
+
+#homejewelrytypesdiv button:active {
+    box-shadow: 0px 0px 4px 4px #aeaeae;
+}
+
+/* #homecataloguediv {
+    margin-bottom:
+} */
