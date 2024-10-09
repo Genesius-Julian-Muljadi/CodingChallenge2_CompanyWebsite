@@ -41,7 +41,7 @@ const config: Config = {
       },
       animation: {
         'icon-extend': 'extend 0.4s cubic-bezier(0.25, 1, 0.5, 1) 1 both',
-        'icon-fade-in': 'fadein 0.15s ease 0.2s 1 normal both',
+        'icon-fade-in': 'fadein 0.15s ease 0.15s 1 normal both',
         'icon-fade-out': 'fadeout 0.2s ease 1 normal both',
         'slide-in-left': 'slideInLeft 0.3s ease 0s 1 normal both',
         'slight-dim': 'slightDim 0.2s ease 0s 1 normal forwards',
