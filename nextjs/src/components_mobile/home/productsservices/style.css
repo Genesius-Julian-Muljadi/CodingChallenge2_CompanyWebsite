@@ -1,5 +1,7 @@
 #homepscontainerdivmobile {
+    height: auto;
     width: 100vw;
+    /* aspect-ratio: 20/11; */
 }
 
 #homegolddivmobile {
