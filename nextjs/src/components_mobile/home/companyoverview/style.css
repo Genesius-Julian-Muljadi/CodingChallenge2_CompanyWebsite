@@ -1,7 +1,8 @@
 #cocontainermobile {
     /* height: 3em; */
-    min-width: 28em;
-    max-width: 31em;
+    /* min-width: 28em;
+    max-width: 31em; */
+    width: 92vw;
 }
 
 #cotextmobile {
