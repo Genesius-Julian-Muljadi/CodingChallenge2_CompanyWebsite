@@ -8,7 +8,7 @@ export default function ContactUs() {
     return (
         <div className="grid grid-cols-7 gris-rows-3 gap-y-2 mt-[-0.8rem]">
             <div className="col-start-1 col-end-4 row-start-1 flex flex-col gap-1" id="socialmediadiv">
-                <div className="col-start-1 row-start-1 text-lg text-white font-serif font-semibold">Social Media</div>
+                <div className="text-lg text-white font-serif font-semibold">Social Media</div>
                 <div className="flex flex-row gap-3">
                     <div className="col-start-1 row-start-1 grid grid-cols-1 grid-rows-1" id="facebooklinkdiv">
                         <a href="https://www.facebook.com/idollajewelry/" target="_blank" id="facebooklink"
@@ -25,7 +25,7 @@ export default function ContactUs() {
                 </div>
             </div>
             <div className="col-start-1 col-end-4 row-start-2 flex flex-col gap-1" id="onlineretailersdiv">
-                <div className="col-start-1 row-start-1 text-lg text-white font-serif font-semibold">Online Retailers</div>
+                <div className="text-lg text-white font-serif font-semibold">Online Retailers</div>
                 <div className="flex flex-row gap-3">
                     <div className="flex flex-row gap-2">
                         <div className="col-start-1 row-start-2 grid grid-cols-1 grid-rows-1" id="shopeediv">
