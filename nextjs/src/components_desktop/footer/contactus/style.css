@@ -35,7 +35,7 @@
 
 #instagramlink {
     background-image: url("../../../assets/instagram.webp");
-    box-shadow: 2px 2px 2px 0px #7f1d1d;
+    box-shadow: 1px 1px 3px 0px #7f1d1d;
     background-size: cover;
 }
 
@@ -47,8 +47,8 @@
 }
 
 #googlemapslink {
-    background-image: url("../../../assets/googlemaps.png");
-    box-shadow: 2px 2px 2px 0px #414141;
+    background-image: url("../../../assets/idollagooglemaps.png");
+    box-shadow: 0px 2px 4px 0px #303030;
     background-size: cover;
 }
 
@@ -86,11 +86,11 @@
     box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.4);
 }
 
-#socialmediagrid {
+/* #socialmediagrid {
     row-gap: 2.4rem;
-}
+} */
 
-#coveringdiv {
+/* #coveringdiv {
     margin-left: -8rem;
     width: 21rem;
-}
+} */

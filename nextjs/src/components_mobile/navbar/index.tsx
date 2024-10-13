@@ -2,17 +2,36 @@ import Link from "next/link";
 import Image from "next/image";
 import IDFlag from "../../assets/indonesiaflag.png";
 import USFlag from "../../assets/americaflag.png";
-import { MenuButton1, MenuButton2 } from "./menubuttons";
-// import { useSelector } from "react-redux";
+import { MenuButton1, MenuButton2, BackgroundDisableMobile } from "./menubuttons";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
 import "./style.css";
 import "../index.css";
 
 export default function NavBarMobile() {
-    // let b = useSelector((state: {TMSlice: {menuIsOpen: Boolean}}) => state.TMSlice.menuIsOpen);
+    let b = useSelector((state: {TMSlice: {menuIsOpen: Boolean}}) => state.TMSlice.menuIsOpen);
+
+    useEffect(() => {
+        const menu = document.getElementById("navbarmenumobile") as HTMLDivElement;
+        const cover = document.getElementById("fullcoveringdivmobile") as HTMLDivElement;
+        // console.log(menu);
+        if (b) {
+            cover.style.display = 'grid'
+            menu.style.display = 'grid';
+            menu.style.animation = 'slideInLeft 0.3s ease 0s 1 normal forwards';
+            setTimeout(() => {console.log(menu.style.display); menu.style.animation = ''}, 310);
+        } else {
+            // menu.style.animation = '';
+            cover.style.display = 'none'
+            menu.style.animation = 'slideInLeft 0.3s ease 0s 1 reverse forwards';
+            setTimeout(() => {console.log(menu.style.display); menu.style.display = 'none'}, 310);
+            // console.log(menu.style.animation);
+        };
+    });
 
     return (
         <div className="">
-            <div className="grid grid-cols-3 grid-rows-1 gap-20 rounded-b-sm shadow-sm shadow-red-950" id="navbarcontainermobile">
+            <div className="grid grid-cols-3 grid-rows-1 gap-20 h-[5vh] rounded-b-sm shadow-sm shadow-red-950" id="navbarcontainermobile">
                 <div className="col-start-1 row-start-1 flex m-auto ml-2 px-1 rounded-md hover:bg-orange-950 hover:bg-opacity-35 active:bg-opacity-55">
                     <MenuButton1 />
                 </div>
@@ -21,7 +40,7 @@ export default function NavBarMobile() {
                 </div>
             </div>
             <div className="absolute z-50 bg-slate-400 rounded-br-md" id="navbarmenumobile">
-                <div className="flex flex-col gap-2 ml-2">
+                <div className="flex flex-col gap-2 ml-2 mt-[0.27rem]">
                     <div className="px-1 rounded-md w-6 hover:bg-slate-700 hover:bg-opacity-35 active:bg-opacity-55">
                         <MenuButton2 />
                     </div>
@@ -50,6 +69,7 @@ export default function NavBarMobile() {
                     </div>
                 </div>
             </div>
+            <BackgroundDisableMobile />
         </div>
     );
 };

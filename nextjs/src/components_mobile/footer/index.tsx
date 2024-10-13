@@ -9,6 +9,9 @@ export default function FooterMobile() {
                     <div className="col-start-1 col-end-5 row-start-1 my-3">
                         <OtherServicesMobile />
                     </div>
+                    <div className="col-start-5 col-end-6 grid h-20 rotate-90">
+                        <hr className="my-auto w-36" />
+                    </div>
                     <div className="col-start-6 col-end-10 row-start-1 my-3">
                         <ContactUsMobile />
                     </div>

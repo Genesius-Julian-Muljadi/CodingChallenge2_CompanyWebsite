@@ -1,0 +1,29 @@
+.cataloguejewelrytypedivs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.cataloguejewelrytypedivs > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 9rem;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    box-shadow: 0px 2px 2px 0px rgb(80, 80, 80);
+}
+
+.cataloguejewelryimages {
+    height: 9rem;
+    width: 9rem;
+}
+
+.cataloguejewelryimages img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}

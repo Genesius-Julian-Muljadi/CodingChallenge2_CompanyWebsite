@@ -39,7 +39,7 @@
 
 /* #navbarmenubuttonmobile:focus#navbarmenumobile {
     animation: slideInLeft 0.3s ease 0s 1 normal both;
-}
+} */
 @keyframes slideInLeft {
 	0% {
 		opacity: 0;
@@ -50,4 +50,5 @@
 		opacity: 1;
 		transform: translateX(0);
 	}
-} */
+}
+

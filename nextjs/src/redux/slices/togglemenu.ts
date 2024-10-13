@@ -10,8 +10,10 @@ const toggleMenuSlice = createSlice({
     reducers: {
         toggleMenu: (state: {menuIsOpen: Boolean}, input: {payload: string}) => {
             if (input.payload === "open") {
+                state.menuIsOpen = false;  // Doubling to force state change to prevent menu getting stuck
                 state.menuIsOpen = true;
             } else if (input.payload === "close") {
+                state.menuIsOpen = true;
                 state.menuIsOpen = false;
             } else {
                 console.log("Invalid input: " + input.payload);
