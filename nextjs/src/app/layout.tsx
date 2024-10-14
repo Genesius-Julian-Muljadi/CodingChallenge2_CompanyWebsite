@@ -1,6 +1,5 @@
 // "use client";
 
-import NavBar from "@/components_desktop/navbar";
 import Footer from "@/components_desktop/footer";
 // import { Provider } from "react-redux";
 // import { store } from "@/redux/store";
@@ -14,7 +13,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {/* <Provider store={store}> */}
-          <NavBar />
+          {/* <NavBar /> */}
           {children}
           <Footer />
         {/* </Provider> */}

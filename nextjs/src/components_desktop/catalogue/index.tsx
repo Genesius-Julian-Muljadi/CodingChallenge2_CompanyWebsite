@@ -163,6 +163,7 @@ export default async function Catalogue() {
                                         <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
+                                        <p className="text-left">{j.fields.price}</p>
                                         <p className="text-left">{j.fields.itemCode}</p>
                                         <ParseRichText document={j.fields.description}/>
                                     </div>
@@ -180,6 +181,7 @@ export default async function Catalogue() {
                                         <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
+                                        <p className="text-left">{j.fields.price}</p>
                                         <p className="text-left">{j.fields.itemCode}</p>
                                         <ParseRichText document={j.fields.description}/>
                                     </div>
@@ -197,6 +199,7 @@ export default async function Catalogue() {
                                         <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
+                                        <p className="text-left">{j.fields.price}</p>
                                         <p className="text-left">{j.fields.itemCode}</p>
                                         <ParseRichText document={j.fields.description}/>
                                     </div>
@@ -214,6 +217,7 @@ export default async function Catalogue() {
                                         <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
+                                        <p className="text-left">{j.fields.price}</p>
                                         <p className="text-left">{j.fields.itemCode}</p>
                                         <ParseRichText document={j.fields.description}/>
                                     </div>
@@ -231,6 +235,7 @@ export default async function Catalogue() {
                                         <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
+                                        <p className="text-left">{j.fields.price}</p>
                                         <p className="text-left">{j.fields.itemCode}</p>
                                         <ParseRichText document={j.fields.description}/>
                                     </div>
@@ -248,6 +253,7 @@ export default async function Catalogue() {
                                         <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
+                                        <p className="text-left">{j.fields.price}</p>
                                         <p className="text-left">{j.fields.itemCode}</p>
                                         <ParseRichText document={j.fields.description}/>
                                     </div>

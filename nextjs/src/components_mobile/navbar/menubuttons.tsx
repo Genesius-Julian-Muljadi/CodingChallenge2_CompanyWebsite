@@ -61,3 +61,8 @@ export function BackgroundDisableMobile() {
             onClick={() => {(b) ? dispatch(toggleMenu('close')) : dispatch(toggleMenu('open'))}} />
     );
 };
+
+export function MenuReset() {
+    const dispatch = useDispatch();
+    dispatch(toggleMenu('close'));
+}

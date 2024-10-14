@@ -10,6 +10,16 @@ import type { ChainModifiers, Entry, EntryFieldTypes, EntrySkeletonType, LocaleC
 // export type TypeBlogSkeleton = EntrySkeletonType<TypeBlogFields, "blog">;
 // export type TypeBlog<Modifiers extends ChainModifiers, Locales extends LocaleCode = LocaleCode> = Entry<TypeBlogSkeleton, Modifiers, Locales>;
 
+export interface TypeOwnerProfileFields {
+    photo?: EntryFieldTypes.AssetLink;
+    name: EntryFieldTypes.Symbol;
+    experience?: EntryFieldTypes.Symbol;
+    contactInfo?: EntryFieldTypes.RichText;
+}
+
+export type TypeOwnerProfileSkeleton = EntrySkeletonType<TypeOwnerProfileFields, "ownerProfile">;
+export type TypeOwnerProfile<Modifiers extends ChainModifiers, Locales extends LocaleCode = LocaleCode> = Entry<TypeOwnerProfileSkeleton, Modifiers, Locales>;
+
 export interface TypeStaffProfileFields {
     photo?: EntryFieldTypes.AssetLink;
     name?: EntryFieldTypes.Symbol;

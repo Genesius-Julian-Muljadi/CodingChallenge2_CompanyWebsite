@@ -2,11 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import IDFlag from "../../assets/indonesiaflag.png";
 import USFlag from "../../assets/americaflag.png";
-import { MenuButton1, MenuButton2, BackgroundDisableMobile } from "./menubuttons";
+import { MenuButton1, MenuButton2, BackgroundDisableMobile, MenuReset } from "./menubuttons";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import "./style.css";
-import "../index.css";
+import "../../index.css";
 
 export default function NavBarMobile() {
     let b = useSelector((state: {TMSlice: {menuIsOpen: Boolean}}) => state.TMSlice.menuIsOpen);
@@ -16,18 +16,31 @@ export default function NavBarMobile() {
         const cover = document.getElementById("fullcoveringdivmobile") as HTMLDivElement;
         // console.log(menu);
         if (b) {
-            cover.style.display = 'grid'
+            cover.style.display = 'grid';
             menu.style.display = 'grid';
             menu.style.animation = 'slideInLeft 0.3s ease 0s 1 normal forwards';
             setTimeout(() => {console.log(menu.style.display); menu.style.animation = ''}, 310);
         } else {
             // menu.style.animation = '';
-            cover.style.display = 'none'
+            cover.style.display = 'none';
             menu.style.animation = 'slideInLeft 0.3s ease 0s 1 reverse forwards';
             setTimeout(() => {console.log(menu.style.display); menu.style.display = 'none'}, 310);
             // console.log(menu.style.animation);
         };
     });
+
+    useEffect(() => {
+        // const menu = document.getElementById("navbarmenumobile") as HTMLDivElement;
+        // const cover = document.getElementById("fullcoveringdivmobile") as HTMLDivElement;
+
+        if (b) {
+            b = false;
+            // cover.click;
+            // cover.style.display = 'none';
+            // menu.style.animation = 'slideInLeft 0.3s ease 0s 1 reverse forwards';
+            // setTimeout(() => {console.log(menu.style.display); menu.style.display = 'none'}, 310);
+        }
+    }, [])
 
     return (
         <div className="">
@@ -55,6 +68,10 @@ export default function NavBarMobile() {
                     <hr className="mr-6" />
                     <div className="pl-1 rounded w-24 hover:bg-slate-700 hover:bg-opacity-35 active:bg-opacity-55">
                         <Link href="/our-team">Our Team</Link>
+                    </div>
+                    <hr className="mr-6" />
+                    <div className="pl-1 rounded w-24 hover:bg-slate-700 hover:bg-opacity-35 active:bg-opacity-55">
+                        <Link href="/catalogue">Catalogue</Link>
                     </div>
                     <hr className="mr-6" />
                     <div className="flex flex-row gap-4 mr-8 mt-1">

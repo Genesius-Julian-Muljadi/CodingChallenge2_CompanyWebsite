@@ -1,5 +1,6 @@
 import contentfulClient from "@/contentful/contentfulClient";
-import { TypeStaffProfileSkeleton,
+import { TypeOwnerProfileSkeleton, 
+        TypeStaffProfileSkeleton,
         TypeDiamondBraceletSkeleton,
         TypeDiamondBroochSkeleton,
         TypeDiamondEarringsSkeleton,
@@ -22,7 +23,17 @@ type RichTextProps = {
 export const ParseRichText = ({ document }: RichTextProps) => {
     if (!document) return null;
     return <>{documentToReactComponents(document)}</>
-  }
+}
+  
+export const getOwnerProfilesContentful = async () => {
+    try {
+        const data = await contentfulClient.getEntries<TypeOwnerProfileSkeleton>();
+        // console.log(data);
+        return data.items.filter((item) => item.sys.contentType.sys.id == "ownerProfile");
+    } catch(err) {
+        console.log(err);
+    }
+}
   
 export const getStaffProfilesContentful = async () => {
     try {

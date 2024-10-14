@@ -8,23 +8,25 @@ export default async function Staff() {
 
     return (
         <div>
-            {/* <div className="hidden sm:flex sm:flex-col"> */}
-            <div className="flex flex-col">
+            
+            <div className="flex flex-col gap-4 my-6">
                 <div className="flex">
-                    <span className="m-auto">Staff</span>
+                    <span className="m-auto text-xl font-semibold">Staff</span>
                 </div>
-                <div className="mx-auto grid grid-cols-3 w-[87vw] gap-6 *:border *:border-indigo-600">
+                <div className="mx-auto grid grid-cols-3 w-[87vw] gap-6" id="staffprofilecontainerdiv">
                 {profiles &&
                     profiles.map((profile, idx) => (
                     <div key={idx} className="flex flex-col gap-2">
                         <div className="h-[80%]">
-                            <img className="h-[100%] w-[100%]"
+                            <img className="h-[100%] w-[100%] rounded-t-xl"
                             src={`https:${(profile.fields.photo as IAsset)?.fields.file.url}`} />
                         </div>
                         <div className="text-left mx-auto w-[80%] flex flex-col">
-                            <p className="text-center text-lg">{profile.fields.name}</p>
-                            <p className="text-sm">{profile.fields.jobTitleExpertise}</p>
-                            <p className="text-sm">{profile.fields.jobExperience}</p>
+                            <p className="text-center text-lg font-serif">{profile.fields.name}</p>
+                            <div className="flex flex-row gap-4">
+                                <p className="text-sm font-semibold">{profile.fields.jobTitleExpertise}</p>
+                                <p className="text-sm">{profile.fields.jobExperience}</p>
+                            </div>
                             <ParseRichText document={profile.fields.contactInfo}/>
                         </div>
                     </div>
