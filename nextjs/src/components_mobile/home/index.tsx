@@ -1,6 +1,7 @@
 import CompanyOverviewMobile from "./companyoverview";
 import HeroMobile from "./hero";
 import ProductsServicesMobile from "./productsservices";
+import TestimonialsMobile from "./testimonials";
 
 export default function HomeMobile() {
     return (
@@ -9,6 +10,7 @@ export default function HomeMobile() {
                 <HeroMobile />
                 <CompanyOverviewMobile />
                 <ProductsServicesMobile />
+                <TestimonialsMobile />
             </div>
         </div>
     );

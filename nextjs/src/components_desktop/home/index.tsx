@@ -17,7 +17,7 @@ export default function HomeView() {
                     <div className="col-start-3 row-start-1 col-end-5"><CompanyOverview /></div>
                 </div>
                 <div><ProductsServices /></div>
-                <div className="mx-32 mb-6"><Testimonials /></div>
+                <div className="w-[80vw] mx-auto mb-6"><Testimonials /></div>
             </div>
         </div>
     );

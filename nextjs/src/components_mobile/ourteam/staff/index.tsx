@@ -21,7 +21,7 @@ export default async function StaffMobile() {
                             <img className="h-[100%] w-[100%] rounded-t-xl"
                             src={`https:${(profile.fields.photo as IAsset)?.fields.file.url}`} />
                         </div>
-                        <div className="text-left mx-auto w-[80%] flex flex-col pb-2">
+                        <div className="text-left mx-auto flex flex-col place-content-center pb-2">
                             <p className="text-center text-lg font-serif">{profile.fields.name}</p>
                             <div className="flex flex-col gap-0 text-sm">
                                 <p className="font-semibold text-nowrap text-center">{profile.fields.jobTitleExpertise}</p>
