@@ -65,21 +65,21 @@ export default function NavBarMobile() {
                         <MenuButton2 />
                     </div>
                     <hr className="mr-6" />
-                    <div className="pl-1 rounded w-24 hover:bg-slate-700 hover:bg-opacity-35 active:bg-opacity-55">
-                        <Link href="/">Home</Link>
-                    </div>
+                    <Link href="/" className="pl-1 rounded w-24 hover:bg-slate-700 hover:bg-opacity-35 active:bg-opacity-55">
+                        <div>Home</div>
+                    </Link>
                     <hr className="mr-6" />
-                    <div className="pl-1 rounded w-24 hover:bg-slate-700 hover:bg-opacity-35 active:bg-opacity-55">
-                        <Link href="/about-us">About Us</Link>
-                    </div>
+                    <Link href="/about-us" className="pl-1 rounded w-24 hover:bg-slate-700 hover:bg-opacity-35 active:bg-opacity-55">
+                        <div>About Us</div>
+                    </Link>
                     <hr className="mr-6" />
-                    <div className="pl-1 rounded w-24 hover:bg-slate-700 hover:bg-opacity-35 active:bg-opacity-55">
-                        <Link href="/our-team">Our Team</Link>
-                    </div>
+                    <Link href="/our-team" className="pl-1 rounded w-24 hover:bg-slate-700 hover:bg-opacity-35 active:bg-opacity-55">
+                        <div>Our Team</div>
+                    </Link>
                     <hr className="mr-6" />
-                    <div className="pl-1 rounded w-24 hover:bg-slate-700 hover:bg-opacity-35 active:bg-opacity-55">
-                        <Link href="/catalogue">Catalogue</Link>
-                    </div>
+                    <Link href="/catalogue" className="pl-1 rounded w-24 hover:bg-slate-700 hover:bg-opacity-35 active:bg-opacity-55">
+                        <div>Catalogue</div>
+                    </Link>
                     <hr className="mr-6" />
                     <div className="flex flex-row gap-4 mr-8 mt-1">
                         <div className="grid grid-cols-1 grid-rows-2 gap-2 ml-1">

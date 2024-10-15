@@ -13,7 +13,7 @@ export default async function StaffMobile() {
                 <div className="flex">
                     <span className="m-auto text-xl font-semibold">Staff</span>
                 </div>
-                <div className="mx-auto grid grid-cols-3 min-h-[16rem] max-h-[20rem] max-w-[87vw] gap-6" id="staffprofilecontainerdivmobile">
+                <div className="mx-auto grid grid-cols-3 min-h-[16rem] max-h-[20rem] max-w-[93vw] gap-1" id="staffprofilecontainerdivmobile">
                 {profiles &&
                     profiles.map((profile, idx) => (
                     <div key={idx} className="flex flex-col gap-2">

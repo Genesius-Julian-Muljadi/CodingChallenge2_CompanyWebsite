@@ -15,12 +15,12 @@ export default async function OwnersMobile() {
                 <div className="mx-auto flex flex-col w-[69vw] gap-6 place-content-center" id="ownerprofilecontainerdivmobile">
                     {profiles &&
                         profiles.map((profile, idx) => (
-                        <div key={idx} className="flex flex-col gap-2 max-h-[27rem]">
+                        <div key={idx} className="flex flex-col gap-2 min-h-[27rem] max-h-[29rem]">
                             <div className="h-[80%]">
                                 <img className="h-[100%] w-[100%] rounded-t-xl"
                                 src={`https:${(profile.fields.photo as IAsset)?.fields.file.url}`} />
                             </div>
-                            <div className="mx-auto w-[80%] flex flex-col pb-2">
+                            <div className="mx-auto flex flex-col pb-2">
                                 <p className="text-center text-lg font-serif">{profile.fields.name}</p>
                                 <div className="flex flex-col gap-0 text-sm text-center">
                                     <p className="text-nowrap">{profile.fields.experience}</p>

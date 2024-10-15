@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function CompanyHistory() {
     return (
         <div>
-            <div className="grid grid-cols-9 grid-rows-1 gap-2 mx-auto h-[35rem] w-[86rem]">
+            <div className="grid grid-cols-9 grid-rows-1 gap-2 mx-auto h-[35rem] w-[95vw]">
                 <div className="col-start-1 col-end-6 row-start-1">
                     {/* <img src="../../../assets/IMG_8370.jpeg" className="h-[100%] w-[100%]"></img> */}
                     <Image src={Storefront} alt='storefrontimg' className="h-[100%] w-[100%] rounded-md shadow-sm shadow-slate-700" />
