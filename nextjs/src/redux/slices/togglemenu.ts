@@ -8,13 +8,14 @@ const toggleMenuSlice = createSlice({
     name: "TMSlice",
     initialState,
     reducers: {
-        toggleMenu: (state: {menuIsOpen: Boolean}, input: {payload: string}) => {
+        toggleMenu: (state: {menuIsOpen: Boolean | null}, input: {payload: string}) => {
             if (input.payload === "open") {
-                state.menuIsOpen = false;  // Doubling to force state change to prevent menu getting stuck
+                // state.menuIsOpen = null;  // Doubling to force state change to prevent menu getting stuck
                 state.menuIsOpen = true;
             } else if (input.payload === "close") {
-                state.menuIsOpen = true;
                 state.menuIsOpen = false;
+            } else if (input.payload === "reset") {
+                state.menuIsOpen = null;
             } else {
                 console.log("Invalid input: " + input.payload);
             };

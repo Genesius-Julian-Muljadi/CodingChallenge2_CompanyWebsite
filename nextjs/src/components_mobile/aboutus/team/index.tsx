@@ -7,7 +7,7 @@ export default async function AboutUsTeamMobile() {
 
     return (
         <div>
-            <div className="flex flex-col gap-2 mx-auto w-[30rem] border border-black">
+            <div className="flex flex-col gap-2 mx-auto w-[90vw] border border-black">
                 <div className="mx-auto font-semibold">Obligatory team section, but on mobile!</div>
                 <div className="grid grid-cols-2 grid-rows-1 gap-6">
                     <div className="col-start-1 row-start-1 grid grid-cols-2 gap-y-2" id="aboutusowners">

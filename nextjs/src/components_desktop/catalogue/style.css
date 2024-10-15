@@ -41,6 +41,10 @@
     font-weight: 600;
 }
 
+.cataloguejewelrytypedivs > div:last-child {
+    gap: 0.5rem;
+}
+
 .cataloguejewelrytypedivs > div > div {
     display: flex;
     flex-direction: column;
@@ -51,7 +55,12 @@
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     box-shadow: 0px 1px 2px 0px rgb(80, 80, 80);
+    padding-bottom: 0.2rem;
 }
+
+/* .cataloguediamonddiv > div > .cataloguejewelrytypedivs > div > div > div > p:first-child {
+    font-weight: 700;
+} */
 
 .cataloguejewelryimages {
     height: 9rem;

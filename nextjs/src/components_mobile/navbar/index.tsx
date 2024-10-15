@@ -2,44 +2,51 @@ import Link from "next/link";
 import Image from "next/image";
 import IDFlag from "../../assets/indonesiaflag.png";
 import USFlag from "../../assets/americaflag.png";
-import { MenuButton1, MenuButton2, BackgroundDisableMobile, MenuReset } from "./menubuttons";
+import { MenuButton1, MenuButton2, BackgroundDisableMobile } from "./menufunctions";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import "./style.css";
 import "../../index.css";
 
 export default function NavBarMobile() {
-    let b = useSelector((state: {TMSlice: {menuIsOpen: Boolean}}) => state.TMSlice.menuIsOpen);
+    let b = useSelector((state: {TMSlice: {menuIsOpen: Boolean | null}}) => state.TMSlice.menuIsOpen);
 
     useEffect(() => {
         const menu = document.getElementById("navbarmenumobile") as HTMLDivElement;
         const cover = document.getElementById("fullcoveringdivmobile") as HTMLDivElement;
         // console.log(menu);
-        if (b) {
+        if (b === true) {
             cover.style.display = 'grid';
             menu.style.display = 'grid';
             menu.style.animation = 'slideInLeft 0.3s ease 0s 1 normal forwards';
-            setTimeout(() => {console.log(menu.style.display); menu.style.animation = ''}, 310);
-        } else {
+            setTimeout(() => {menu.style.animation = ''}, 310);
+        } else if (b === false) {
             // menu.style.animation = '';
             cover.style.display = 'none';
             menu.style.animation = 'slideInLeft 0.3s ease 0s 1 reverse forwards';
-            setTimeout(() => {console.log(menu.style.display); menu.style.display = 'none'}, 310);
+            setTimeout(() => {menu.style.display = 'none'}, 310);
             // console.log(menu.style.animation);
+        } else {
+            // console.log('currentlynull');
         };
     });
 
     useEffect(() => {
-        // const menu = document.getElementById("navbarmenumobile") as HTMLDivElement;
-        // const cover = document.getElementById("fullcoveringdivmobile") as HTMLDivElement;
+        const menu = document.getElementById("navbarmenumobile") as HTMLDivElement;
+        const cover = document.getElementById("fullcoveringdivmobile") as HTMLDivElement;
+        cover.style.display = 'none';
+        menu.style.display = 'none';
 
-        if (b) {
-            b = false;
+        // if (b === null) {
+        //     cover.style.display = 'none';
+        //     menu.style.display = 'none';
+            // b = false;
             // cover.click;
+            // MenuReset();
             // cover.style.display = 'none';
             // menu.style.animation = 'slideInLeft 0.3s ease 0s 1 reverse forwards';
             // setTimeout(() => {console.log(menu.style.display); menu.style.display = 'none'}, 310);
-        }
+        // }
     }, [])
 
     return (

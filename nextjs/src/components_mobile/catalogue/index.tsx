@@ -36,7 +36,7 @@ export default async function CatalogueMobile() {
                 <div id="cataloguegolddivmobile">
                     <div className="grid grid-cols-1 grid-rows-1 h-12 mt-2">
                         <div className="col-start-1 row-start-1 my-auto text-xl font-semibold pl-[0.65rem]">Gold</div>
-                        <div className="col-start-1 row-start-1 mt-[2.2rem] italic text-sm pl-[0.65rem]">Prices depend on daily gold value. Please contact us for more details.</div>
+                        <div className="col-start-1 row-start-1 mt-[2.2rem] italic text-sm pl-[0.65rem]">Prices depend on daily gold value.</div>
                         {/* <div className="col-start-1 row-start-1 bg-green-400 size-4" onClick={() => {console.log(grings.items[0])}}></div> */}
                     </div>
                     <div className="grid grid-cols-1 grid-rows-6 gap-4">

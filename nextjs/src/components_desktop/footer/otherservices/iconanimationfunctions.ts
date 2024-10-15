@@ -33,3 +33,12 @@ export function AnimReset(id: string): void {
     };
     element.style.animation = '';
 }
+
+export function WobbleRight(id: string): void {
+    const element = document.getElementById(id);
+    if (element == null) {
+        console.log('element input null');
+        return;
+    };
+    element.style.animation = 'wobbleRight 0.8s ease 0s 1 normal forwards';
+};

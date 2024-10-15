@@ -2,9 +2,9 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGem } from "@fortawesome/free-regular-svg-icons";
-import { faFireFlameCurved } from "@fortawesome/free-solid-svg-icons/faFireFlameCurved";
-import { faCoins } from "@fortawesome/free-solid-svg-icons";
-import { Wobble, SwingInBottom, DoublePulse, AnimReset } from "@/components_desktop/footer/otherservices/iconanimationfunctions";
+// import { faFireFlameCurved } from "@fortawesome/free-solid-svg-icons/faFireFlameCurved";
+import { faHammer, faCoins } from "@fortawesome/free-solid-svg-icons";
+import { Wobble, WobbleRight, DoublePulse, AnimReset } from "@/components_desktop/footer/otherservices/iconanimationfunctions";
 import "./style.css";
 
 export default function OtherServicesMobile() {
@@ -19,10 +19,16 @@ export default function OtherServicesMobile() {
                             <FontAwesomeIcon icon={faGem} style={{color: "#c1cde2",}} id="polishingiconmobile" />
                         </div>
                     </div>
-                    <div className="flex flex-row gap-2 px-2 ml-auto rounded-md shadow-sm shadow-zinc-900" onMouseEnter={() => {SwingInBottom('smeltingiconmobile')}} onMouseLeave={() => {AnimReset('smeltingiconmobile')}}>
+                    {/* <div className="flex flex-row gap-2 px-2 ml-auto rounded-md shadow-sm shadow-zinc-900" onMouseEnter={() => {SwingInBottom('smeltingiconmobile')}} onMouseLeave={() => {AnimReset('smeltingiconmobile')}}>
                         <div>Smelting</div>
                         <div>
                             <FontAwesomeIcon icon={faFireFlameCurved} style={{color: "#d0a65d",}} id="smeltingiconmobile" />
+                        </div>
+                    </div> */}
+                    <div className="flex flex-row gap-2 px-2 ml-auto rounded-md shadow-sm shadow-zinc-900" onMouseEnter={() => {WobbleRight('repairiconmobile')}} onMouseLeave={() => {AnimReset('repairiconmobile')}}>
+                        <div>Repair</div>
+                        <div>
+                            <FontAwesomeIcon icon={faHammer} id="repairiconmobile" />
                         </div>
                     </div>
                     <div className="flex flex-row gap-2 px-2 ml-auto rounded-md shadow-sm shadow-zinc-900" onMouseEnter={() => {DoublePulse('finegoldtradingiconmobile')}} onMouseLeave={() => {AnimReset('finegoldtradingiconmobile')}}>

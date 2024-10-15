@@ -32,6 +32,10 @@
     font-weight: 600;
 }
 
+.cataloguejewelrytypedivsmobile > div:last-child {
+    gap: 0.5rem;
+}
+
 .cataloguejewelrytypedivsmobile > div > div {
     display: flex;
     flex-direction: column;
