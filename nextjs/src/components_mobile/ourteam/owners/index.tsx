@@ -18,7 +18,7 @@ export default async function OwnersMobile() {
                         <div key={idx} className="flex flex-col gap-2 min-h-[27rem] max-h-[29rem]">
                             <div className="h-[80%]">
                                 <img className="h-[100%] w-[100%] rounded-t-xl"
-                                src={`https:${(profile.fields.photo as IAsset)?.fields.file.url}`} />
+                                src={`https:${(profile.fields.photo as IAsset)?.fields.file.url}`} alt={`${profile.fields.name}img`} />
                             </div>
                             <div className="mx-auto flex flex-col pb-2">
                                 <p className="text-center text-lg font-serif">{profile.fields.name}</p>

@@ -47,7 +47,7 @@ export default async function CatalogueMobile() {
                                 grings.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left">{j.fields.itemCode}</p>
@@ -64,7 +64,7 @@ export default async function CatalogueMobile() {
                                 gpendants.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left">{j.fields.itemCode}</p>
@@ -81,7 +81,7 @@ export default async function CatalogueMobile() {
                                 gearrings.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left">{j.fields.itemCode}</p>
@@ -98,7 +98,7 @@ export default async function CatalogueMobile() {
                                 gnecklaces.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left">{j.fields.itemCode}</p>
@@ -115,7 +115,7 @@ export default async function CatalogueMobile() {
                                 gbracelets.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left">{j.fields.itemCode}</p>
@@ -132,7 +132,7 @@ export default async function CatalogueMobile() {
                                 gbrooches.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left">{j.fields.itemCode}</p>
@@ -156,7 +156,7 @@ export default async function CatalogueMobile() {
                                 drings.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left font-semibold">{j.fields.price}</p>
@@ -174,7 +174,7 @@ export default async function CatalogueMobile() {
                                 dpendants.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left font-semibold">{j.fields.price}</p>
@@ -192,7 +192,7 @@ export default async function CatalogueMobile() {
                                 dearrings.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left font-semibold">{j.fields.price}</p>
@@ -210,7 +210,7 @@ export default async function CatalogueMobile() {
                                 dnecklaces.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left font-semibold">{j.fields.price}</p>
@@ -228,7 +228,7 @@ export default async function CatalogueMobile() {
                                 dbracelets.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left font-semibold">{j.fields.price}</p>
@@ -246,7 +246,7 @@ export default async function CatalogueMobile() {
                                 dbrooches.map((j, idx) => (
                                 <div key={idx}>
                                     <div className="cataloguejewelryimagesmobile">
-                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} />
+                                        <img src={`https:${(j.fields.image as IAsset)?.fields.file.url}`} alt={`${j.fields.itemCode}img`} />
                                     </div>
                                     <div className="text-left mx-auto w-[90%] flex flex-col">
                                         <p className="text-left font-semibold">{j.fields.price}</p>

@@ -5,6 +5,7 @@ import "./globals.css";
 export default function Home() {
   return (
     <div>
+      <title>Home Page</title>
       <HomeView />
     </div>
   );

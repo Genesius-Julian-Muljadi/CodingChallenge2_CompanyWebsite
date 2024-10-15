@@ -16,7 +16,7 @@ export default async function AboutUsTeamMobile() {
                             <div key={idx} className="flex flex-col gap-2">
                                 <div className="size-16 mx-auto">
                                     <img className="h-[100%] w-[100%] rounded-full shadow-md shadow-slate-700"
-                                    src={`https:${(profile.fields.photo as IAsset)?.fields.file.url}`} />
+                                    src={`https:${(profile.fields.photo as IAsset)?.fields.file.url}`} alt={`${profile.fields.name}img`} />
                                 </div>
                                 <p className="text-center font-serif">{profile.fields.name}</p>
                             </div>
@@ -28,7 +28,7 @@ export default async function AboutUsTeamMobile() {
                             <div key={idx} className="flex flex-col gap-2">
                                 <div className="size-16 mx-auto">
                                     <img className="h-[100%] w-[100%] rounded-full shadow-md shadow-slate-700"
-                                    src={`https:${(profile.fields.photo as IAsset)?.fields.file.url}`} />
+                                    src={`https:${(profile.fields.photo as IAsset)?.fields.file.url}`} alt={`${profile.fields.name}img`} />
                                 </div>
                                 <p className="text-center font-serif">{profile.fields.name}</p>
                             </div>

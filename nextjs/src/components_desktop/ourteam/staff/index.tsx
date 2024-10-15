@@ -19,7 +19,7 @@ export default async function Staff() {
                     <div key={idx} className="flex flex-col gap-2">
                         <div className="h-[80%]">
                             <img className="h-[100%] w-[100%] rounded-t-xl"
-                            src={`https:${(profile.fields.photo as IAsset)?.fields.file.url}`} />
+                            src={`https:${(profile.fields.photo as IAsset)?.fields.file.url}`} alt={`${profile.fields.name}img`} />
                         </div>
                         <div className="text-left mx-auto w-[80%] flex flex-col">
                             <p className="text-center text-lg font-serif">{profile.fields.name}</p>
