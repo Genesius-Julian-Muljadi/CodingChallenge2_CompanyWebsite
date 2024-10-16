@@ -7,8 +7,8 @@ export default async function AboutUsTeam() {
 
     return (
         <div>
-            <div className="flex flex-col gap-2 mx-auto w-[86rem]">
-                <div className="mx-auto font-semibold">Obligatory team section even though you can just go to the Our Team page</div>
+            <div className="flex flex-col gap-4 mx-auto w-[95vw]">
+                <div className="mx-auto font-semibold text-lg">Team</div>
                 <div className="grid grid-cols-2 grid-rows-1 gap-3">
                     <div className="col-start-1 row-start-1 m-auto flex flex-row gap-2 h-[20rem]" id="aboutusowners">
                         {oprofiles &&

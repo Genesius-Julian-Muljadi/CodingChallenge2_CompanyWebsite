@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Culture from "../../../assets/indonesiaflag.png";
+import Culture from "../../../assets/culture.jpg";
 
 export default function CompanyCultureMobile() {
     return (
@@ -9,7 +9,7 @@ export default function CompanyCultureMobile() {
                     <Image src={Culture} alt='cultureimg' className="h-[100%] w-[100%] rounded-md shadow-sm shadow-slate-700" />
                 </div>
                 <div className="p-4 mx-auto text-xl">
-                    Obligatory company culture section text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    In our team, you'll see a culture of transparency, integrity, and an unwavering focus on doing what's right for each other and our customers. 
                 </div>
             </div>
         </div>

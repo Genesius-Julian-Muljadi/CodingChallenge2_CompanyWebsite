@@ -7,9 +7,9 @@ export default async function AboutUsTeamMobile() {
 
     return (
         <div>
-            <div className="flex flex-col gap-2 mx-auto w-[90vw] border border-black">
-                <div className="mx-auto font-semibold">Obligatory team section, but on mobile!</div>
-                <div className="grid grid-cols-2 grid-rows-1 gap-6">
+            <div className="flex flex-col gap-2 mx-auto w-[90vw]">
+                <div className="mx-auto font-semibold text-lg">Team</div>
+                <div className="grid grid-cols-2 grid-rows-1 gap-6 rounded-xl shadow-sm shadow-slate-700 py-2 bg-[#fffcff]">
                     <div className="col-start-1 row-start-1 grid grid-cols-2 gap-y-2" id="aboutusowners">
                         {oprofiles &&
                             oprofiles.map((profile, idx) => (
